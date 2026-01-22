@@ -1,20 +1,18 @@
-import About from '@/components/About';
-import Appointment from '@/components/Appointment';
-import Clients from '@/components/Clients';
-import Features from '@/components/Features';
-import Footer from '@/components/Footer';
-import Hero from '@/components/Hero';
-import MainHeader from '@/components/MainHeader';
-import News from '@/components/News';
-import Pricing from '@/components/Pricing';
-import Services from '@/components/Services';
-import Team from '@/components/Team';
-import Testimonial from '@/components/Testimonial';
+import About from '@/components/Home/About';
+import Appointment from '@/components/Home/Appointment';
+import Clients from '@/components/Home/Clients';
+import Features from '@/components/Home/Features';
+import Hero from '@/components/Home/Hero';
+import News from '@/components/Home/News';
+import Pricing from '@/components/Home/Pricing';
+import Services from '@/components/Home/Services';
+import Team from '@/components/Home/Team';
+import Testimonial from '@/components/Home/Testimonial';
+import MainLayout from '@/components/layout/MainLayout';
 
 export default function Home() {
   return (
-    <>
-      <MainHeader />
+    <MainLayout>
       <Hero />
       <Features />
       <About />
@@ -25,7 +23,6 @@ export default function Home() {
       <Pricing />
       <News />
       <Clients />
-      <Footer />
-    </>
+    </MainLayout>
   );
 }

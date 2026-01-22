@@ -3043,19 +3043,20 @@ hr {
   top: 0;
   height: 100%;
   width: 100%;
-  /* background-color: #ffffff;*/
+  background-color: rgba(0, 0, 0, 0.5);
   content: '';
-  opacity: 0.5;
+  z-index: 1;
 }
 
 .page-title .title-outer {
   position: relative;
   display: inline-block;
   border-radius: 10px;
+  z-index: 2;
 }
 
 .page-title h1 {
-  color: #1370b5;
+  color: #ffffff !important;
   font-size: 48px;
   font-weight: 700;
   line-height: 1.2em;
@@ -3082,7 +3083,7 @@ hr {
 .page-breadcrumb li {
   position: relative;
   display: inline-block;
-  color: rgba(0, 0, 0, 0.75);
+  color: #ffffff;
   font-size: 18px;
   font-weight: 500;
   padding: 0 18px;
@@ -3098,7 +3099,7 @@ hr {
   font-family: 'flaticon';
   display: inline-block;
   font-size: 18px;
-  color: #000;
+  color: #ffffff;
 }
 
 .page-breadcrumb li:last-child::after {
@@ -3106,7 +3107,7 @@ hr {
 }
 
 .page-breadcrumb li a {
-  color: rgba(0, 0, 0, 0.75);
+  color: #ffffff;
   text-transform: capitalize;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
